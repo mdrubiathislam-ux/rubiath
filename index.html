@@ -1,0 +1,2501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Md. Rubiath Islam | Academic Portfolio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#030303;--card:#171717;--card2:#202020;--line:#303030;--text:#f5f5f5;--muted:#b8b8b8;--dim:#7d7d7d}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{font-family:Poppins,system-ui,sans-serif;background:#030303;color:var(--text);line-height:1.65}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:99;background:rgba(3,3,3,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.05)}
+nav{height:70px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.logo{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f5f5f5,#777);color:#090909;font-weight:900}
+.navlinks{display:flex;gap:4px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:6px}
+.navlinks a{font-size:11.5px;font-weight:800;color:#bfbfbf;padding:9px 11px;border-radius:12px}
+.navlinks a:hover,.navlinks a.active{background:rgba(255,255,255,.15);color:#fff}
+.talk{justify-self:end;background:#e8e8e8;color:#111;border-radius:12px;padding:10px 16px;font-size:12px;font-weight:900}
+.hero{min-height:620px;display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding:72px 0 60px}
+.kicker{font-weight:700;font-size:18px;margin-bottom:12px}
+h1{font-size:clamp(44px,6vw,76px);line-height:.97;letter-spacing:-.06em;margin-bottom:18px}.soft{color:#cfcfcf}
+.hero p{color:var(--muted);font-size:15px;max-width:620px;text-align:justify;margin-bottom:24px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:0}.btn{border-radius:12px;padding:12px 16px;font-size:13px;font-weight:900;border:1px solid transparent}.primary{background:#e8e8e8;color:#111}.secondary{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);color:#fff}
+.social{display:flex;gap:14px}.social a{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);font-size:13px;font-weight:900}
+.visual{min-height:480px;display:grid;place-items:center;position:relative}.visual:before{content:"";position:absolute;width:410px;height:410px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.10),transparent 65%);filter:blur(12px)}
+.visual img{max-width:min(470px,100%);max-height:540px;object-fit:contain;filter:grayscale(1) contrast(1.08) drop-shadow(0 35px 65px rgba(0,0,0,.75));position:relative}
+.section{padding:76px 0}.head{text-align:center;margin-bottom:38px}.head h2{font-size:clamp(30px,4vw,48px);line-height:1.06;letter-spacing:-.05em;margin-bottom:10px}.head p{color:var(--muted);font-size:13px;font-weight:700}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.055));border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:24px;box-shadow:0 26px 70px rgba(0,0,0,.42)}
+.card h3{font-size:21px;line-height:1.18;letter-spacing:-.03em;margin-bottom:12px}.card p{color:var(--muted);font-size:13px;line-height:1.82;text-align:justify}.tag{display:inline-block;background:#e8e8e8;color:#111;border-radius:999px;padding:7px 10px;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.list{display:grid;gap:10px;margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}.list span{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:9px 12px;color:#e8e8e8;font-size:12px;font-weight:650}
+.about{max-width:980px;margin:0 auto 28px;color:var(--muted);text-align:center;font-size:14px;line-height:1.9}.approach{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}.step{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:17px}.num{width:34px;height:34px;border-radius:9px;background:#e8e8e8;color:#111;display:grid;place-items:center;font-weight:900;font-size:12px}.statrow{display:flex;justify-content:center;gap:56px;margin-top:30px;text-align:center}.statrow strong{display:block;font-size:28px;letter-spacing:-.04em}.statrow span{color:var(--muted);font-size:12px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);color:#dfdfdf;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:650}
+.research-img{width:100%;border-radius:20px;border:1px solid rgba(255,255,255,.12);background:#fff;margin-top:20px;box-shadow:0 26px 70px rgba(0,0,0,.42)}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.links a,.links span{border-radius:10px;padding:9px 12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);font-size:12px;font-weight:800;color:#e8e8e8}
+.contact{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}.contact h2{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.05em;margin-bottom:12px}.contact p{color:var(--muted);font-size:14px;text-align:justify}.icons{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;justify-items:center}.icons a{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12);font-weight:900}.icons a:hover{background:#e8e8e8;color:#111}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:30px 0 46px}
+@media(max-width:980px){nav{grid-template-columns:1fr auto}.navlinks{display:none}.hero,.grid2,.grid3,.contact{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,1fr)}.visual{min-height:420px}.visual img{max-height:440px}}
+@media(max-width:620px){.container{width:min(100% - 28px,1120px)}.grid4,.approach{grid-template-columns:1fr}.statrow{gap:24px;flex-wrap:wrap}.icons{grid-template-columns:repeat(3,1fr)}}
+
+/* Publication card spacing for full publication list */
+#publications .card h3 {
+  min-height: 54px;
+}
+#publications .links {
+  margin-top: 18px;
+}
+
+
+/* Research Focus image-hover cards */
+.focus-image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.focus-image-card {
+  position: relative;
+  min-height: 360px;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  background: #111;
+  box-shadow: 0 26px 70px rgba(0,0,0,.46);
+  isolation: isolate;
+}
+
+.focus-image-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.08) brightness(.84);
+  transform: scale(1.02);
+  transition: filter .35s ease, transform .35s ease;
+  z-index: 1;
+}
+
+.focus-image-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.80) 0%, rgba(0,0,0,.20) 42%, rgba(0,0,0,.72) 100%);
+  z-index: 2;
+  transition: background .35s ease;
+}
+
+.focus-image-card h3 {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  z-index: 4;
+  font-size: 22px;
+  line-height: 1.15;
+  letter-spacing: -.035em;
+  color: #fff;
+  text-shadow: 0 8px 22px rgba(0,0,0,.55);
+}
+
+.focus-hover-text {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .35s ease, transform .35s ease;
+  pointer-events: none;
+}
+
+.focus-hover-text p {
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.75;
+  font-weight: 600;
+  max-width: 290px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(0,0,0,.54);
+  border: 1px solid rgba(255,255,255,.16);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 42px rgba(0,0,0,.40);
+}
+
+.focus-image-card:hover img {
+  filter: grayscale(1) contrast(1.08) brightness(.45) blur(5px);
+  transform: scale(1.08);
+}
+
+.focus-image-card:hover::before {
+  background: rgba(0,0,0,.34);
+}
+
+.focus-image-card:hover .focus-hover-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.focus-image-card:hover h3 {
+  opacity: .9;
+}
+
+@media(max-width:980px) {
+  .focus-image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:620px) {
+  .focus-image-grid {
+    grid-template-columns: 1fr;
+  }
+  .focus-image-card {
+    min-height: 330px;
+  }
+}
+
+
+/* Split About Me section with photo and research interest boxes */
+.about-split {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.about-text-panel,
+.about-visual-panel {
+  background: linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.055));
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 26px 70px rgba(0,0,0,.42);
+}
+
+.about-text-panel h3 {
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -.04em;
+  margin-bottom: 14px;
+}
+
+.about-text-panel p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.about-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.about-metric {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 16px;
+  padding: 18px 14px;
+  text-align: center;
+}
+
+.about-metric strong {
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.about-metric span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.about-photo-wrap {
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.13);
+  background: #111;
+  box-shadow: 0 26px 70px rgba(0,0,0,.42);
+}
+
+.about-photo {
+  width: 100%;
+  height: 520px;
+  object-fit: contain;
+  object-position: center top;
+  display: block;
+  filter: grayscale(1) contrast(1.06);
+}
+
+.research-interest-boxes {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.interest-box {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  align-items: center;
+  background: rgba(255,255,255,.09);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px;
+  padding: 15px;
+}
+
+.interest-number {
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  background: #e8e8e8;
+  color: #111;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.interest-box strong {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.interest-box span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+@media(max-width:980px) {
+  .about-split {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    height: 520px;
+  }
+}
+
+@media(max-width:620px) {
+  .about-text-panel,
+  .about-visual-panel {
+    padding: 20px;
+  }
+
+  .about-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    height: 390px;
+  }
+}
+
+
+/* Skills tree section */
+.skills-tree-panel {
+  position: relative;
+  margin-top: 18px;
+  border-radius: 28px;
+  min-height: 1180px;
+  background:
+    radial-gradient(circle at 50% 92%, rgba(255,255,255,0.34), rgba(255,255,255,0.08) 10%, rgba(255,255,255,0.00) 24%),
+    radial-gradient(circle at 50% 80%, rgba(255,255,255,0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00) 30%),
+    #050505;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 28px 80px rgba(0,0,0,0.55), inset 0 0 120px rgba(255,255,255,0.03);
+  overflow: hidden;
+}
+.skills-tree-panel::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  width: 520px;
+  height: 240px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle at center, rgba(255,255,255,0.45), rgba(255,255,255,0.10) 28%, rgba(255,255,255,0.00) 68%);
+  filter: blur(24px);
+  pointer-events: none;
+}
+.skills-tree-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 18%, transparent 82%, rgba(255,255,255,0.03));
+  pointer-events: none;
+}
+.skills-tree-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.skills-tree-svg .tree-path {
+  fill: none;
+  stroke: rgba(245,245,245,0.85);
+  stroke-width: 10;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.55)) drop-shadow(0 0 18px rgba(255,255,255,0.18));
+}
+.skills-tree-svg .tree-fine {
+  fill: none;
+  stroke: rgba(255,255,255,0.38);
+  stroke-width: 3;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.30));
+}
+.skills-tree-svg .tree-dust {
+  fill: rgba(255,255,255,0.9);
+  opacity: 0.75;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.85));
+}
+.tree-main-node {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 16px;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.16), rgba(255,255,255,0.06) 32%, rgba(0,0,0,0.75) 78%);
+  border: 2px solid rgba(255,255,255,0.78);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  box-shadow: 0 0 22px rgba(255,255,255,0.18), inset 0 0 22px rgba(255,255,255,0.10);
+  z-index: 3;
+}
+.tree-pill {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: linear-gradient(145deg, rgba(0,0,0,0.92), rgba(35,35,35,0.92));
+  border: 2px solid rgba(255,255,255,0.78);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  box-shadow: 0 0 14px rgba(255,255,255,0.15), inset 0 0 12px rgba(255,255,255,0.05);
+  z-index: 4;
+  cursor: default;
+  transform-origin: center;
+}
+.tree-pill:hover,
+.tree-main-node:hover {
+  animation: skillWobble 0.72s ease;
+}
+@keyframes skillWobble {
+  0% { transform: translateX(0) rotate(0deg); }
+  18% { transform: translateX(-3px) rotate(-1.4deg); }
+  36% { transform: translateX(3px) rotate(1.2deg); }
+  54% { transform: translateX(-2px) rotate(-0.8deg); }
+  72% { transform: translateX(2px) rotate(0.6deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+.tree-group-title {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  z-index: 2;
+}
+/* desktop positions */
+.main-wetlab{ left: 22%; top: 23%; }
+.main-bioinfo{ left: 24%; top: 58%; }
+.main-programming{ left: 45%; top: 21%; }
+.main-software{ left: 66.2%; top: 24%; }
+.main-language{ left: 65.5%; top: 59%; }
+
+.wet-1{ left: 6%; top: 8%; width: 195px; }
+.wet-2{ left: 6%; top: 14%; width: 185px; }
+.wet-3{ left: 6%; top: 20%; width: 160px; }
+.wet-4{ left: 6%; top: 26%; width: 165px; }
+.wet-5{ left: 6%; top: 32%; width: 165px; }
+.wet-6{ left: 6%; top: 38%; width: 170px; }
+.wet-7{ left: 6%; top: 44%; width: 155px; }
+
+.bio-1{ left: 5%; top: 53%; width: 215px; }
+.bio-2{ left: 5%; top: 60%; width: 150px; }
+.bio-3{ left: 5%; top: 67%; width: 155px; }
+.bio-4{ left: 5%; top: 74%; width: 195px; }
+.bio-5{ left: 5%; top: 81%; width: 195px; }
+.bio-6{ left: 5%; top: 88%; width: 210px; }
+
+.prog-1{ left: 41%; top: 7.8%; width: 125px; }
+.prog-2{ left: 49.5%; top: 2.4%; width: 110px; }
+.prog-3{ left: 58%; top: 8.5%; width: 120px; }
+
+.soft-1{ left: 79%; top: 10%; width: 165px; }
+.soft-2{ left: 80%; top: 17%; width: 180px; }
+.soft-3{ left: 80%; top: 24.5%; width: 150px; }
+.soft-4{ left: 80%; top: 32%; width: 170px; }
+.soft-5{ left: 80%; top: 39.5%; width: 180px; }
+
+.lang-1{ left: 79.5%; top: 61.5%; width: 170px; }
+.lang-2{ left: 80%; top: 69%; width: 160px; }
+.lang-3{ left: 80%; top: 76.5%; width: 170px; }
+
+.skills-mobile-grid { display: none; }
+@media (max-width: 1180px) {
+  .skills-tree-panel { min-height: 1080px; }
+  .tree-pill { font-size: 14px; }
+  .tree-main-node { width: 118px; height: 118px; font-size: 17px; }
+}
+@media (max-width: 980px) {
+  .skills-tree-panel { display: none; }
+  .skills-mobile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+  }
+  .skills-mobile-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.10), rgba(255,255,255,0.055));
+    border: 1px solid rgba(255,255,255,0.13);
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .skills-mobile-card h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    letter-spacing: -0.03em;
+  }
+  .skills-mobile-pillset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skills-mobile-pillset span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    font-size: 12px;
+    color: #fff;
+  }
+}
+@media (max-width: 620px) {
+  .skills-mobile-grid { grid-template-columns: 1fr; }
+}
+
+
+/* Exact reference image based skills section */
+.skills-exact-wrap {
+  margin-top: 12px;
+}
+
+.skills-exact-card {
+  background: linear-gradient(145deg, rgba(255,255,255,.10), rgba(255,255,255,.055));
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 24px;
+  padding: 18px;
+  box-shadow: 0 26px 70px rgba(0,0,0,.42);
+}
+
+.skills-exact-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  background: #000;
+}
+
+
+/* Interactive exact-image skills section */
+.skills-exact-wrap {
+  margin-top: 12px;
+}
+
+.skills-exact-card {
+  background: linear-gradient(145deg, rgba(255,255,255,.10), rgba(255,255,255,.055));
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 24px;
+  padding: 18px;
+  box-shadow: 0 26px 70px rgba(0,0,0,.42);
+}
+
+.skills-exact-stage {
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+}
+
+.skills-exact-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  background: #000;
+}
+
+.skills-hotspot {
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.01);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: box-shadow .22s ease, border-color .22s ease, background .22s ease;
+}
+
+.skills-hotspot:hover,
+.skills-hotspot:focus-visible {
+  animation: hotspotWobble 0.75s ease;
+  border-color: rgba(255,255,255,.38);
+  background: rgba(255,255,255,.05);
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,.08) inset,
+    0 0 18px rgba(255,255,255,.18);
+  outline: none;
+}
+
+@keyframes hotspotWobble {
+  0%   { transform: translateX(0) rotate(0deg) scale(1); }
+  18%  { transform: translateX(-3px) rotate(-1.6deg) scale(1.02); }
+  36%  { transform: translateX(3px) rotate(1.2deg) scale(1.02); }
+  54%  { transform: translateX(-2px) rotate(-0.9deg) scale(1.01); }
+  72%  { transform: translateX(2px) rotate(0.7deg) scale(1.01); }
+  100% { transform: translateX(0) rotate(0deg) scale(1); }
+}
+
+/* Desktop hotspots using percentages against the exact image */
+.hs-wet-1 { left: 5.4%; top: 7.8%; width: 18.8%; height: 4.9%; }
+.hs-wet-2 { left: 5.0%; top: 13.5%; width: 18.5%; height: 4.8%; }
+.hs-wet-3 { left: 5.2%; top: 19.3%; width: 17.6%; height: 4.7%; }
+.hs-wet-4 { left: 5.1%; top: 25.1%; width: 17.5%; height: 4.7%; }
+.hs-wet-5 { left: 5.1%; top: 30.8%; width: 18.0%; height: 4.8%; }
+.hs-wet-6 { left: 5.1%; top: 36.6%; width: 17.9%; height: 4.8%; }
+.hs-wet-7 { left: 5.1%; top: 42.5%; width: 17.1%; height: 4.7%; }
+
+.hs-bio-1 { left: 4.8%; top: 51.7%; width: 18.8%; height: 5.0%; }
+.hs-bio-2 { left: 5.0%; top: 58.0%; width: 15.3%; height: 4.8%; }
+.hs-bio-3 { left: 5.0%; top: 64.1%; width: 15.6%; height: 4.8%; }
+.hs-bio-4 { left: 5.0%; top: 70.1%; width: 18.6%; height: 5.0%; }
+.hs-bio-5 { left: 5.0%; top: 76.2%; width: 17.8%; height: 4.8%; }
+.hs-bio-6 { left: 5.0%; top: 82.4%; width: 18.6%; height: 4.8%; }
+
+.hs-prog-1 { left: 39.0%; top: 8.0%; width: 12.9%; height: 4.6%; }
+.hs-prog-2 { left: 48.5%; top: 2.7%; width: 12.6%; height: 4.6%; }
+.hs-prog-3 { left: 58.4%; top: 8.0%; width: 12.2%; height: 4.6%; }
+
+.hs-soft-1 { left: 77.4%; top: 8.0%; width: 16.5%; height: 4.9%; }
+.hs-soft-2 { left: 78.4%; top: 14.7%; width: 17.0%; height: 4.9%; }
+.hs-soft-3 { left: 79.1%; top: 21.5%; width: 14.6%; height: 4.8%; }
+.hs-soft-4 { left: 78.7%; top: 28.1%; width: 16.3%; height: 4.9%; }
+.hs-soft-5 { left: 78.6%; top: 34.8%; width: 17.0%; height: 4.9%; }
+
+.hs-lang-1 { left: 77.2%; top: 57.7%; width: 16.4%; height: 4.8%; }
+.hs-lang-2 { left: 77.4%; top: 64.4%; width: 16.3%; height: 4.8%; }
+.hs-lang-3 { left: 77.4%; top: 71.1%; width: 16.5%; height: 4.8%; }
+
+/* Optional hover for main node circles */
+.hs-main-wet { left: 25.9%; top: 25.1%; width: 11.7%; height: 11.7%; border-radius: 50%; }
+.hs-main-bio { left: 28.0%; top: 58.3%; width: 11.8%; height: 11.8%; border-radius: 50%; }
+.hs-main-prog { left: 46.0%; top: 21.2%; width: 11.6%; height: 11.6%; border-radius: 50%; }
+.hs-main-soft { left: 66.0%; top: 24.1%; width: 11.8%; height: 11.8%; border-radius: 50%; }
+.hs-main-lang { left: 66.4%; top: 57.9%; width: 11.8%; height: 11.8%; border-radius: 50%; }
+
+@media (max-width: 720px) {
+  .skills-exact-card { padding: 10px; }
+}
+
+
+/* Skills tree with overlay labels */
+.skills-tree-overlay-wrap {
+  margin-top: 12px;
+}
+.skills-tree-overlay-card {
+  background: linear-gradient(145deg, rgba(255,255,255,.10), rgba(255,255,255,.055));
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 24px;
+  padding: 18px;
+  box-shadow: 0 26px 70px rgba(0,0,0,.42);
+}
+.skills-tree-stage {
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+}
+.skills-tree-base {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.skills-branch-pill,
+.skills-main-node {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  user-select: none;
+  cursor: default;
+}
+.skills-branch-pill {
+  min-height: 4.7%;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: linear-gradient(145deg, rgba(5,5,5,0.96), rgba(28,28,28,0.96));
+  border: 2px solid rgba(255,255,255,0.78);
+  box-shadow: 0 0 14px rgba(255,255,255,0.16), inset 0 0 12px rgba(255,255,255,0.05);
+  font-size: clamp(10px, 0.92vw, 15px);
+  font-weight: 600;
+  line-height: 1.18;
+}
+.skills-main-node {
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.18), rgba(255,255,255,0.06) 32%, rgba(0,0,0,0.84) 80%);
+  border: 2px solid rgba(255,255,255,0.82);
+  box-shadow: 0 0 20px rgba(255,255,255,0.20), inset 0 0 16px rgba(255,255,255,0.08);
+  font-size: clamp(12px, 1.15vw, 19px);
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 0.4rem;
+}
+.skills-branch-pill:hover,
+.skills-main-node:hover {
+  animation: skillsWobble 0.74s ease;
+}
+@keyframes skillsWobble {
+  0% { transform: translateX(0) rotate(0deg); }
+  18% { transform: translateX(-3px) rotate(-1.5deg); }
+  36% { transform: translateX(3px) rotate(1.2deg); }
+  54% { transform: translateX(-2px) rotate(-0.9deg); }
+  72% { transform: translateX(2px) rotate(0.7deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+/* main nodes */
+.mn-wetlab{ left:25.9%; top:25.1%; width:11.7%; aspect-ratio:1/1; }
+.mn-bioinfo{ left:28.0%; top:58.3%; width:11.8%; aspect-ratio:1/1; }
+.mn-programming{ left:46.0%; top:21.2%; width:11.6%; aspect-ratio:1/1; }
+.mn-software{ left:66.0%; top:24.1%; width:11.8%; aspect-ratio:1/1; }
+.mn-language{ left:66.4%; top:57.9%; width:11.8%; aspect-ratio:1/1; }
+/* edge labels */
+.p-wet-1 { left:5.1%; top:7.1%; width:18.9%; }
+.p-wet-2 { left:4.8%; top:12.8%; width:18.6%; }
+.p-wet-3 { left:5.0%; top:18.5%; width:17.7%; }
+.p-wet-4 { left:4.9%; top:24.3%; width:17.7%; }
+.p-wet-5 { left:4.9%; top:30.1%; width:18.1%; }
+.p-wet-6 { left:4.9%; top:35.9%; width:18.0%; }
+.p-wet-7 { left:4.9%; top:41.8%; width:17.2%; }
+.p-bio-1 { left:4.6%; top:51.0%; width:18.9%; }
+.p-bio-2 { left:4.8%; top:57.2%; width:15.5%; }
+.p-bio-3 { left:4.8%; top:63.3%; width:15.8%; }
+.p-bio-4 { left:4.8%; top:69.4%; width:18.7%; }
+.p-bio-5 { left:4.8%; top:75.5%; width:17.9%; }
+.p-bio-6 { left:4.8%; top:81.7%; width:18.7%; }
+.p-prog-1 { left:39.0%; top:7.2%; width:12.9%; }
+.p-prog-2 { left:48.5%; top:1.9%; width:12.7%; }
+.p-prog-3 { left:58.4%; top:7.2%; width:12.3%; }
+.p-soft-1 { left:77.2%; top:7.2%; width:16.7%; }
+.p-soft-2 { left:78.2%; top:13.9%; width:17.1%; }
+.p-soft-3 { left:79.0%; top:20.7%; width:14.8%; }
+.p-soft-4 { left:78.6%; top:27.4%; width:16.5%; }
+.p-soft-5 { left:78.5%; top:34.1%; width:17.1%; }
+.p-lang-1 { left:77.0%; top:57.0%; width:16.6%; }
+.p-lang-2 { left:77.2%; top:63.7%; width:16.4%; }
+.p-lang-3 { left:77.2%; top:70.4%; width:16.7%; }
+@media (max-width: 980px) {
+  .skills-tree-overlay-card { padding: 10px; }
+  .skills-branch-pill { font-size: clamp(8px, 1.35vw, 12px); border-width: 1.5px; }
+  .skills-main-node { font-size: clamp(9px, 1.5vw, 14px); border-width: 1.5px; }
+}
+
+
+/* Icons inside skill-tree text boxes */
+.skills-branch-pill,
+.skills-main-node {
+  gap: 8px;
+}
+
+.skill-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 7px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.28));
+}
+
+.skills-main-node {
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skills-main-node .skill-icon {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+@media (max-width: 980px) {
+  .skill-icon {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    font-size: 11px;
+  }
+
+  .skills-main-node .skill-icon {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+
+/* All-in-one skill visualization */
+.skill-overview-shell {
+  position: relative;
+  margin-top: 20px;
+  border-radius: 32px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(255,255,255,.06), transparent 24%),
+    radial-gradient(circle at 12% 82%, rgba(255,255,255,.04), transparent 22%),
+    linear-gradient(180deg, #141414 0%, #0a0a0a 52%, #050505 100%);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 30px 90px rgba(0,0,0,.56), inset 0 0 120px rgba(255,255,255,.025);
+}
+
+.skill-overview-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
+  background-size: 42px 42px;
+  opacity: .38;
+  pointer-events: none;
+}
+
+.skill-overview-topbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.015));
+  backdrop-filter: blur(12px);
+}
+
+.skill-overview-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #f3f3f3;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.skill-overview-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  box-shadow: 0 0 14px rgba(255,255,255,.68);
+}
+
+.skill-overview-meta {
+  color: rgba(255,255,255,.62);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.skill-overview-body {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.24fr .76fr;
+  min-height: 760px;
+}
+
+.skill-visual-panel {
+  position: relative;
+  padding: 20px 18px 24px;
+  overflow: hidden;
+}
+
+.skill-visual-watermark::before,
+.skill-visual-watermark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.skill-visual-watermark::before {
+  width: 520px;
+  height: 520px;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: inset 0 0 0 44px rgba(255,255,255,.018), 0 0 80px rgba(255,255,255,.025);
+  opacity: .6;
+}
+
+.skill-visual-watermark::after {
+  width: 780px;
+  height: 780px;
+  border: 1px dashed rgba(255,255,255,.06);
+  opacity: .5;
+}
+
+.skill-visual-title {
+  position: absolute;
+  left: 24px;
+  top: 22px;
+  z-index: 2;
+}
+
+.skill-visual-title strong {
+  display: block;
+  font-size: clamp(28px, 3.4vw, 44px);
+  line-height: 1.02;
+  letter-spacing: -.06em;
+}
+
+.skill-visual-title span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.skill-all-canvas {
+  position: relative;
+  min-height: 690px;
+  margin-top: 34px;
+}
+
+.skill-all-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.skill-all-svg path {
+  fill: none;
+  stroke: rgba(255,255,255,.52);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-dasharray: 4 10;
+  filter: drop-shadow(0 0 7px rgba(255,255,255,.18));
+  animation: skillNetworkFlow 4.6s linear infinite;
+}
+
+.skill-all-svg .core-line {
+  stroke-width: 2.8;
+  stroke: rgba(255,255,255,.66);
+}
+
+@keyframes skillNetworkFlow {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -90; }
+}
+
+.skill-group-title {
+  position: absolute;
+  z-index: 4;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.55);
+  border: 1px solid rgba(255,255,255,.10);
+  color: rgba(255,255,255,.86);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.skill-node {
+  position: absolute;
+  z-index: 3;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.82);
+  background:
+    radial-gradient(circle at 35% 28%, #4d4d4d 0%, #1d1d1d 46%, #070707 100%);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  box-shadow:
+    0 0 16px rgba(255,255,255,.12),
+    inset 0 0 18px rgba(255,255,255,.05);
+  cursor: pointer;
+  transition:
+    transform .24s ease,
+    box-shadow .24s ease,
+    background .24s ease,
+    color .24s ease;
+}
+
+.skill-node.root {
+  width: 106px;
+  height: 106px;
+  border-width: 3px;
+}
+
+.skill-node:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 28px rgba(255,255,255,.26),
+    inset 0 0 22px rgba(255,255,255,.08);
+}
+
+.skill-node.active {
+  transform: scale(1.14);
+  background:
+    radial-gradient(circle at 35% 28%, #f4f4f4 0%, #bbbbbb 42%, #2f2f2f 100%);
+  color: #090909;
+  box-shadow:
+    0 0 36px rgba(255,255,255,.42),
+    0 0 72px rgba(255,255,255,.12);
+}
+
+.skill-node-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.skill-node.root .skill-node-icon {
+  font-size: 27px;
+}
+
+.skill-node-label {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 7px);
+  transform: translateX(-50%);
+  display: inline-flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  min-width: 94px;
+  max-width: 152px;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.62);
+  border: 1px solid rgba(255,255,255,.10);
+  color: rgba(255,255,255,.82);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  backdrop-filter: blur(8px);
+}
+
+.skill-node.active .skill-node-label {
+  color: #fff;
+  border-color: rgba(255,255,255,.24);
+  box-shadow: 0 0 14px rgba(255,255,255,.12);
+}
+
+.skill-mini-stat {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 18px;
+  background: rgba(0,0,0,.58);
+  border: 1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(8px);
+}
+
+.skill-mini-stat span {
+  color: rgba(255,255,255,.8);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.skill-mini-stat b {
+  color: white;
+  font-size: 16px;
+}
+
+.skill-detail-panel {
+  position: relative;
+  padding: 28px;
+  border-left: 1px solid rgba(255,255,255,.08);
+  background:
+    radial-gradient(circle at 10% 12%, rgba(255,255,255,.10), transparent 24%),
+    linear-gradient(180deg, rgba(45,45,45,.92), rgba(10,10,10,.98));
+  display: grid;
+  align-content: center;
+}
+
+.skill-detail-card {
+  position: relative;
+  border-radius: 28px;
+  padding: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  border: 1px solid rgba(255,255,255,.13);
+  box-shadow: 0 24px 60px rgba(0,0,0,.36);
+}
+
+.skill-detail-card.opening {
+  animation: skillDetailOpen .48s cubic-bezier(.2,.9,.2,1);
+}
+
+@keyframes skillDetailOpen {
+  0% { opacity: 0; transform: translateY(20px) scale(.96); filter: blur(4px); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+.skill-detail-mini {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 999px;
+  padding: 7px 12px;
+  color: rgba(255,255,255,.86);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.skill-detail-mini b {
+  font-size: 12px;
+}
+
+.skill-detail-card h3 {
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.04;
+  letter-spacing: -.06em;
+  margin-bottom: 14px;
+}
+
+.skill-detail-card p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.skill-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill-detail-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.10);
+  color: rgba(255,255,255,.84);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.skill-detail-tip {
+  margin-top: 22px;
+  color: rgba(255,255,255,.52);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+@media(max-width: 1180px) {
+  .skill-overview-body {
+    grid-template-columns: 1fr;
+  }
+  .skill-detail-panel {
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+}
+
+@media(max-width: 900px) {
+  .skill-all-canvas {
+    min-height: 940px;
+  }
+  .skill-node {
+    width: 72px;
+    height: 72px;
+  }
+  .skill-node.root {
+    width: 92px;
+    height: 92px;
+  }
+  .skill-node-label {
+    min-width: 80px;
+    font-size: 9px;
+  }
+}
+
+@media(max-width: 620px) {
+  .skill-overview-topbar,
+  .skill-visual-panel,
+  .skill-detail-panel {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+
+/* Remove right-side skill description panel */
+.skill-overview-body {
+  display: block !important;
+}
+
+.skill-detail-panel {
+  display: none !important;
+}
+
+.skill-visual-panel {
+  min-height: 790px;
+}
+
+.skill-all-canvas {
+  min-height: 735px;
+}
+
+.skill-visual-title span {
+  content: "";
+}
+
+
+/* Refined smaller skill nodes and clearer spacing */
+.skill-visual-panel {
+  min-height: 900px !important;
+}
+
+.skill-all-canvas {
+  min-height: 850px !important;
+  margin-top: 42px !important;
+}
+
+.skill-node {
+  width: 62px !important;
+  height: 62px !important;
+}
+
+.skill-node.root {
+  width: 78px !important;
+  height: 78px !important;
+}
+
+.skill-node-icon {
+  font-size: 17px !important;
+}
+
+.skill-node.root .skill-node-icon {
+  font-size: 21px !important;
+}
+
+.skill-node-label {
+  min-width: 78px !important;
+  max-width: 130px !important;
+  padding: 5px 8px !important;
+  font-size: 9.5px !important;
+  line-height: 1.18 !important;
+  top: calc(100% + 6px) !important;
+  white-space: normal !important;
+}
+
+.skill-group-title {
+  font-size: 11px !important;
+  padding: 7px 10px !important;
+}
+
+.skill-mini-stat {
+  bottom: 10px !important;
+}
+
+@media(max-width: 900px) {
+  .skill-all-canvas {
+    min-height: 980px !important;
+  }
+  .skill-node {
+    width: 56px !important;
+    height: 56px !important;
+  }
+  .skill-node.root {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .skill-node-label {
+    min-width: 70px !important;
+    font-size: 8.5px !important;
+  }
+}
+
+
+/* Cleaned Skills header text removal */
+.skill-overview-topbar {
+  justify-content: flex-start !important;
+}
+
+.skill-visual-title {
+  display: none !important;
+}
+
+
+/* Center skill-set headings over each cluster */
+.skill-group-title {
+  transform: translateX(-50%) !important;
+  text-align: center !important;
+}
+
+
+/* Rebalanced after removing Language section */
+.skill-visual-panel {
+  min-height: 820px !important;
+}
+.skill-all-canvas {
+  min-height: 770px !important;
+}
+
+
+/* Cleaned heading removal and improved spacing */
+.skill-overview-body {
+  min-height: 860px !important;
+}
+.skill-visual-panel {
+  min-height: 860px !important;
+  padding-top: 22px !important;
+}
+.skill-all-canvas {
+  min-height: 820px !important;
+  margin-top: 10px !important;
+}
+.skill-node-label {
+  max-width: 120px !important;
+}
+
+
+/* Layout tweak: bioinformatics to the right, software/programming lower */
+.skill-overview-body {
+  min-height: 920px !important;
+}
+.skill-visual-panel {
+  min-height: 920px !important;
+}
+.skill-all-canvas {
+  min-height: 880px !important;
+}
+
+
+/* Skills section background image */
+.skill-overview-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.skill-overview-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,.44), rgba(0,0,0,.52)),
+    url('skills-section-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(0.8px) brightness(.82);
+  transform: scale(1.06);
+  opacity: .62;
+  pointer-events: none;
+}
+
+.skill-overview-shell::before {
+  z-index: 1;
+}
+
+.skill-overview-shell > * {
+  position: relative;
+  z-index: 2;
+}
+
+.skill-node-label {
+  background: rgba(0,0,0,.82) !important;
+  border-color: rgba(255,255,255,.16) !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,.30);
+}
+
+.skill-node {
+  box-shadow:
+    0 0 18px rgba(255,255,255,.14),
+    inset 0 0 18px rgba(255,255,255,.05),
+    0 10px 28px rgba(0,0,0,.24);
+}
+
+.skill-all-svg path {
+  stroke: rgba(255,255,255,.60);
+}
+
+
+/* Restored Project Timeline Nodes */
+.project-timeline-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 34px;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.project-year-map {
+  position: relative;
+  min-height: 560px;
+  border-radius: 30px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 18%, rgba(255,255,255,.11), transparent 24%),
+    radial-gradient(circle at 72% 70%, rgba(255,255,255,.08), transparent 28%),
+    linear-gradient(180deg, #141414 0%, #070707 58%, #040404 100%);
+  border: 1px solid rgba(255,255,255,.13);
+  box-shadow: 0 30px 90px rgba(0,0,0,.56), inset 0 0 120px rgba(255,255,255,.025);
+}
+
+.project-year-map::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 85%, rgba(255,255,255,.08), transparent 28%),
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: auto, 44px 44px, 44px 44px;
+  opacity: .75;
+  pointer-events: none;
+}
+
+.project-map-title {
+  position: absolute;
+  left: 34px;
+  top: 32px;
+  z-index: 3;
+}
+
+.project-map-title strong {
+  display: block;
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.02;
+  letter-spacing: -.055em;
+  color: #fff;
+}
+
+.project-map-title span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.project-connector-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.project-connector-svg path {
+  fill: none;
+  stroke: rgba(255,255,255,.72);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 4 10;
+  filter: drop-shadow(0 0 7px rgba(255,255,255,.42));
+  animation: dottedFlow 4s linear infinite;
+}
+
+@keyframes dottedFlow {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -90; }
+}
+
+.project-year-node {
+  position: absolute;
+  z-index: 5;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at 35% 25%, #4b4b4b 0%, #1a1a1a 45%, #060606 100%);
+  border: 3px solid rgba(255,255,255,.86);
+  color: #fff;
+  box-shadow:
+    0 0 22px rgba(255,255,255,.20),
+    inset 0 0 22px rgba(255,255,255,.07);
+  cursor: pointer;
+  transition:
+    transform .28s ease,
+    box-shadow .28s ease,
+    background .28s ease,
+    color .28s ease;
+}
+
+.project-year-node:hover {
+  transform: scale(1.10);
+  box-shadow:
+    0 0 32px rgba(255,255,255,.34),
+    inset 0 0 22px rgba(255,255,255,.10);
+}
+
+.project-year-node.active {
+  transform: scale(1.18);
+  background:
+    radial-gradient(circle at 35% 25%, #f7f7f7 0%, #bdbdbd 42%, #2c2c2c 100%);
+  color: #080808;
+  box-shadow:
+    0 0 40px rgba(255,255,255,.48),
+    0 0 80px rgba(255,255,255,.14);
+}
+
+.project-year-node strong {
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+.project-year-node span span {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  opacity: .82;
+}
+
+/* visible timeline node positions */
+.year-2023 { left: 9%;  top: 63%; }
+.year-2024 { left: 28%; top: 34%; }
+.year-2025 { left: 56%; top: 52%; }
+.year-2026 { left: 74%; top: 24%; }
+
+.project-preview-chip {
+  position: absolute;
+  z-index: 4;
+  border-radius: 999px;
+  padding: 9px 12px;
+  background: rgba(0,0,0,.62);
+  border: 1px solid rgba(255,255,255,.13);
+  color: rgba(255,255,255,.78);
+  font-size: 11px;
+  font-weight: 800;
+  backdrop-filter: blur(8px);
+}
+
+.chip-1 { left: 8%; bottom: 34px; }
+.chip-2 { right: 30px; bottom: 38px; }
+
+.project-popout-panel {
+  min-height: 560px;
+  border-radius: 30px;
+  padding: 34px;
+  background:
+    radial-gradient(circle at 18% 15%, rgba(255,255,255,.12), transparent 28%),
+    linear-gradient(180deg, rgba(45,45,45,.97), rgba(12,12,12,.97));
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 30px 90px rgba(0,0,0,.56), inset 0 0 80px rgba(255,255,255,.025);
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+}
+
+.project-popout-card {
+  position: relative;
+  border-radius: 26px;
+  padding: 32px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.085), rgba(255,255,255,.035));
+  border: 1px solid rgba(255,255,255,.13);
+  box-shadow: 0 24px 60px rgba(0,0,0,.36);
+}
+
+.project-popout-card.opening {
+  animation: projectPopRight .58s cubic-bezier(.2,.9,.2,1);
+}
+
+@keyframes projectPopRight {
+  0% { opacity: 0; transform: translateX(-38px) scale(.94); filter: blur(4px); }
+  60% { opacity: 1; transform: translateX(8px) scale(1.01); filter: blur(0); }
+  100% { opacity: 1; transform: translateX(0) scale(1); filter: blur(0); }
+}
+
+.project-popout-year {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  background: #e8e8e8;
+  color: #111;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.project-popout-tag {
+  display: block;
+  color: rgba(255,255,255,.62);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.project-popout-card h3 {
+  font-size: clamp(26px, 3vw, 42px);
+  line-height: 1.05;
+  letter-spacing: -.055em;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.project-popout-card p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.project-popout-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project-popout-list span {
+  display: block;
+  border-radius: 14px;
+  padding: 11px 13px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.10);
+  color: rgba(255,255,255,.82);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media(max-width: 980px) {
+  .project-timeline-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project-year-map {
+    min-height: 460px;
+  }
+
+  .project-year-node {
+    width: 90px;
+    height: 90px;
+  }
+
+  .project-year-node strong {
+    font-size: 22px;
+  }
+}
+
+@media(max-width: 620px) {
+  .project-year-map {
+    min-height: 520px;
+  }
+
+  .year-2023 { left: 8%; top: 65%; }
+  .year-2024 { left: 22%; top: 35%; }
+  .year-2025 { left: 53%; top: 53%; }
+  .year-2026 { left: 68%; top: 22%; }
+
+  .project-popout-panel {
+    padding: 20px;
+  }
+
+  .project-popout-card {
+    padding: 22px;
+  }
+}
+
+
+/* Project right panel: text first, then slide to image */
+.project-popout-panel{min-height:560px;border-radius:30px;padding:30px;background:radial-gradient(circle at 18% 15%,rgba(255,255,255,.12),transparent 28%),linear-gradient(180deg,rgba(45,45,45,.97),rgba(12,12,12,.97));border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 90px rgba(0,0,0,.56),inset 0 0 80px rgba(255,255,255,.025);display:grid;align-content:center;overflow:hidden}
+.project-popout-card{position:relative;border-radius:26px;padding:0!important;min-height:445px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.13);box-shadow:0 24px 60px rgba(0,0,0,.36)}
+.project-slide-stage{position:relative;min-height:445px;width:100%;overflow:hidden}
+.project-text-slide,.project-image-slide{position:absolute;inset:0;transition:transform .85s cubic-bezier(.2,.9,.2,1),opacity .7s ease,filter .7s ease}
+.project-text-slide{padding:32px;z-index:2;background:radial-gradient(circle at 12% 10%,rgba(255,255,255,.08),transparent 28%),linear-gradient(180deg,rgba(30,30,30,.96),rgba(10,10,10,.98));transform:translateX(0);opacity:1}
+.project-image-slide{z-index:3;transform:translateX(105%);opacity:0;filter:blur(4px);background:#050505}
+.project-popout-card.image-phase .project-text-slide{transform:translateX(-105%);opacity:0;filter:blur(4px)}
+.project-popout-card.image-phase .project-image-slide{transform:translateX(0);opacity:1;filter:blur(0)}
+.project-popout-card.text-phase .project-text-slide{animation:projectTextComeIn .55s cubic-bezier(.2,.9,.2,1)}
+.project-popout-card.image-phase .project-image-slide{animation:projectImageComeIn .72s cubic-bezier(.2,.9,.2,1)}
+@keyframes projectTextComeIn{0%{opacity:0;transform:translateX(-34px) scale(.97)}100%{opacity:1;transform:translateX(0) scale(1)}}
+@keyframes projectImageComeIn{0%{opacity:0;transform:translateX(95%) scale(.98)}100%{opacity:1;transform:translateX(0) scale(1)}}
+.project-card-controls{position:absolute;top:16px;right:16px;z-index:5;display:flex;gap:8px}
+.project-card-controls button{border:1px solid rgba(255,255,255,.16);background:rgba(0,0,0,.62);color:#fff;border-radius:999px;padding:7px 10px;font-size:11px;font-weight:850;cursor:pointer;backdrop-filter:blur(8px)}
+.project-card-controls button:hover{background:rgba(255,255,255,.16)}
+.project-image-slide img{width:100%;height:100%;object-fit:contain;display:block;filter:contrast(1.06) brightness(.92);background:#050505}
+.project-image-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.40)),radial-gradient(circle at 50% 50%,transparent 34%,rgba(0,0,0,.25));pointer-events:none}
+.project-image-caption{position:absolute;left:18px;right:18px;bottom:18px;border-radius:18px;padding:14px 16px;background:rgba(0,0,0,.70);border:1px solid rgba(255,255,255,.14);color:#fff;backdrop-filter:blur(10px)}
+.project-image-caption strong{display:block;font-size:16px;line-height:1.2}
+.project-image-caption span{display:block;margin-top:5px;color:rgba(255,255,255,.70);font-size:12px;font-weight:700}
+.project-slide-note{margin-top:18px;color:rgba(255,255,255,.50);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.project-popout-card h3{font-size:clamp(25px,2.8vw,39px);line-height:1.05;letter-spacing:-.055em;margin-bottom:16px;color:#fff}
+.project-popout-card p{color:var(--muted);font-size:15px;line-height:1.85;text-align:justify}
+@media(max-width:620px){.project-popout-panel{padding:20px}.project-text-slide{padding:22px}}
+
+
+/* Project image fit and caption removal */
+.project-image-slide {
+  display: grid;
+  place-items: center;
+  background: #050505;
+}
+
+.project-image-slide img {
+  object-fit: contain !important;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project-image-caption {
+  display: none !important;
+}
+
+
+/* Fix project text panel cropping */
+.project-popout-panel {
+  min-height: 640px !important;
+  align-content: stretch !important;
+}
+
+.project-popout-card {
+  min-height: 580px !important;
+}
+
+.project-slide-stage {
+  min-height: 580px !important;
+}
+
+.project-text-slide {
+  overflow-y: auto !important;
+  padding: 64px 32px 32px 32px !important;
+  scrollbar-width: thin;
+}
+
+.project-text-slide::-webkit-scrollbar {
+  width: 7px;
+}
+
+.project-text-slide::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.25);
+  border-radius: 999px;
+}
+
+.project-text-slide::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.05);
+}
+
+.project-popout-card h3 {
+  font-size: clamp(22px, 2.45vw, 34px) !important;
+  line-height: 1.12 !important;
+}
+
+.project-popout-card p {
+  font-size: 14px !important;
+  line-height: 1.72 !important;
+}
+
+.project-popout-list {
+  margin-top: 16px !important;
+}
+
+.project-popout-list span {
+  padding: 9px 12px !important;
+  font-size: 11.5px !important;
+}
+
+.project-slide-note {
+  margin-top: 14px !important;
+}
+
+@media(max-width: 620px) {
+  .project-popout-panel {
+    min-height: 640px !important;
+  }
+
+  .project-popout-card,
+  .project-slide-stage {
+    min-height: 600px !important;
+  }
+
+  .project-text-slide {
+    padding: 64px 22px 26px 22px !important;
+  }
+}
+
+
+/* Fullscreen project image pop-out */
+.project-image-slide img {
+  cursor: zoom-in;
+}
+
+.project-image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 34px;
+  background: rgba(0,0,0,.88);
+  backdrop-filter: blur(10px);
+}
+
+.project-image-modal.open {
+  display: flex;
+  animation: projectModalFade .24s ease;
+}
+
+@keyframes projectModalFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.project-image-modal-inner {
+  position: relative;
+  width: min(96vw, 1500px);
+  height: min(92vh, 900px);
+  border-radius: 24px;
+  overflow: hidden;
+  background: #050505;
+  border: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 40px 120px rgba(0,0,0,.72), 0 0 45px rgba(255,255,255,.10);
+  display: grid;
+  place-items: center;
+}
+
+.project-image-modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.project-image-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.26);
+  background: rgba(0,0,0,.72);
+  color: #fff;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 22px rgba(0,0,0,.45);
+}
+
+.project-image-close:hover {
+  background: rgba(255,255,255,.16);
+}
+
+.project-image-modal-caption {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 2;
+  max-width: min(680px, calc(100% - 36px));
+  border-radius: 18px;
+  padding: 12px 14px;
+  background: rgba(0,0,0,.64);
+  border: 1px solid rgba(255,255,255,.14);
+  color: rgba(255,255,255,.86);
+  font-size: 13px;
+  font-weight: 750;
+  backdrop-filter: blur(8px);
+}
+
+@media(max-width: 620px) {
+  .project-image-modal {
+    padding: 14px;
+  }
+
+  .project-image-modal-inner {
+    width: 98vw;
+    height: 88vh;
+    border-radius: 18px;
+  }
+
+  .project-image-close {
+    top: 12px;
+    right: 12px;
+  }
+
+  .project-image-modal-caption {
+    font-size: 11px;
+  }
+}
+
+
+/* Fix fullscreen modal image cropping */
+.project-image-modal {
+  padding: 0 !important;
+}
+
+.project-image-modal-inner {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  border-radius: 0 !important;
+  border: none !important;
+  overflow: visible !important;
+  background: rgba(0,0,0,.92) !important;
+  box-shadow: none !important;
+  padding: 24px !important;
+  box-sizing: border-box !important;
+}
+
+.project-image-modal img {
+  width: auto !important;
+  height: auto !important;
+  max-width: calc(100vw - 64px) !important;
+  max-height: calc(100vh - 64px) !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.project-image-modal-caption {
+  display: none !important;
+}
+
+.project-image-close {
+  top: 22px !important;
+  right: 22px !important;
+}
+
+@media(max-width: 620px) {
+  .project-image-modal-inner {
+    padding: 12px !important;
+  }
+
+  .project-image-modal img {
+    max-width: calc(100vw - 24px) !important;
+    max-height: calc(100vh - 24px) !important;
+  }
+}
+
+
+/* Remove shadow effects */
+*,
+*::before,
+*::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.project-year-node,
+.project-popout-panel,
+.project-popout-card,
+.project-image-modal-inner,
+.project-image-close,
+.skill-node,
+.skill-overview-shell,
+.skill-node-label,
+.focus-image-card,
+.about-card,
+.card,
+.btn,
+.nav {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.project-connector-svg path,
+.skill-all-svg path {
+  filter: none !important;
+}
+
+
+/* Make overall background black */
+html, body {
+  background: #000 !important;
+}
+
+body::before,
+body::after {
+  background: none !important;
+}
+
+main,
+section,
+.hero,
+.wrap,
+.container,
+.page-shell {
+  background-color: transparent !important;
+}
+
+.section {
+  background: transparent !important;
+}
+
+.nav {
+  background: rgba(0,0,0,.88) !important;
+}
+
+.card,
+.about-card,
+.focus-image-card,
+.project-year-map,
+.project-popout-panel,
+.project-popout-card,
+.skill-overview-shell,
+.project-image-modal-inner {
+  background-color: #000 !important;
+}
+
+</style>
+</head>
+<body>
+<header><nav class="container"><a class="logo" href="#home">RI</a><div class="navlinks"><a class="active" href="#home">Home</a><a href="#services">Research</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#achievements">Achievements</a></div><a class="talk" href="#contact">Let’s Talk</a></nav></header>
+<main id="home">
+<section class="container hero">
+<div><p class="kicker">I am Rubiath</p><h1>PhD Student, <span class="soft">Research Enthusiast</span></h1><p>Hi, I am Rubiath (R-u-b-a-i-a-t). I am a PhD student in the Biology Department at the University of Texas at Arlington. My research interests are in microbiology, immunology, antibiotic resistance, host-pathogen interaction, and stem cell biology. In my free time, I enjoy playing guitar, photography, and reading.</p><div class="actions"><a class="btn primary" href="Md_Rubiath_Islam_CV.pdf" download>Download CV</a><a class="btn secondary" href="#services">Explore Research</a></div></div>
+<div class="visual"><img src="rubiath-profile.png" alt="Md. Rubiath Islam"></div>
+</section>
+<section class="section" id="services"><div class="container"><div class="head"><h2>Research Focus</h2><p>Core areas shaping my scientific direction</p></div><div class="focus-image-grid">
+
+<article class="focus-image-card">
+  <img src="research-focus-amr.png" alt="Antibiotic resistance and microbial adaptation">
+  <h3>Microbiology & AMR</h3>
+  <div class="focus-hover-text">
+    <p>Antibiotic resistance, MDR pathogens, integrons, transposons, and wastewater-based AMR surveillance.</p>
+  </div>
+</article>
+
+<article class="focus-image-card">
+  <img src="research-focus-host-pathogen.png" alt="Host-pathogen interaction">
+  <h3>Host-Pathogen Interaction</h3>
+  <div class="focus-hover-text">
+    <p>How microbial invasion, virulence, and host defense shape infection dynamics and disease outcomes.</p>
+  </div>
+</article>
+
+<article class="focus-image-card">
+  <img src="research-focus-immune.png" alt="Immune modulation by microorganisms">
+  <h3>Immune Modulation</h3>
+  <div class="focus-hover-text">
+    <p>How microbes and microbial products influence inflammation, tolerance, and immune homeostasis.</p>
+  </div>
+</article>
+
+<article class="focus-image-card">
+  <img src="research-focus-stem-cell.png" alt="Stem cell biology and regeneration">
+  <h3>Stem Cell Biology</h3>
+  <div class="focus-hover-text">
+    <p>Regeneration, differentiation, tissue repair, and cellular plasticity in disease and recovery.</p>
+  </div>
+</article>
+
+</div></div></section>
+<section class="section" id="about">
+  <div class="container">
+    <div class="head">
+      <h2>About Me</h2>
+      <p>Researcher at the interface of microbes, genes, and host biology</p>
+    </div>
+
+    <div class="about-split">
+      <div class="about-text-panel">
+        <h3>From molecular microbiology to host-focused biomedical research</h3>
+        <p>
+          My academic journey connects microbiology, molecular biology, wastewater microbiome research, antimicrobial resistance surveillance, immunology, stem cell biology, and computational analysis. I completed both my BSc and MS in Biochemistry and Molecular Biology from Shahjalal University of Science and Technology, Bangladesh, and I am now beginning my PhD training in Quantitative Biology at the University of Texas at Arlington.
+        </p>
+        <p>
+          My research background includes hospital wastewater metagenomics, ARG surveillance, integron and transposon analysis, bacterial isolation, antimicrobial susceptibility testing, PCR, qPCR, RT-PCR, Sanger sequencing, and bioinformatics pipeline development. I am especially interested in how microbial systems influence disease, immunity, and therapeutic opportunities.
+        </p>
+
+        <div class="about-metrics">
+          <div class="about-metric">
+            <strong>3.91</strong>
+            <span>BSc CGPA<br>Biochemistry & Molecular Biology</span>
+          </div>
+          <div class="about-metric">
+            <strong>3.86</strong>
+            <span>MS CGPA<br>Biochemistry & Molecular Biology</span>
+          </div>
+          <div class="about-metric">
+            <strong>09</strong>
+            <span>Publication entries<br>Published + submitted</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual-panel">
+        <figure class="about-photo-wrap">
+          <img src="about-lab-photo.png" alt="Illustrated laboratory portrait of Md. Rubiath Islam" class="about-photo">
+        </figure>
+
+        <div class="research-interest-boxes">
+          <div class="interest-box">
+            <span class="interest-number">01</span>
+            <div>
+              <strong>Microbiology, AMR, and pathogen biology</strong>
+              <span>Resistance mechanisms, MDR organisms, hospital wastewater resistomes, and microbial adaptation.</span>
+            </div>
+          </div>
+
+          <div class="interest-box">
+            <span class="interest-number">02</span>
+            <div>
+              <strong>Host-pathogen interaction and immune modulation</strong>
+              <span>How microbes interact with host systems and influence inflammation, defense, and immune regulation.</span>
+            </div>
+          </div>
+
+          <div class="interest-box">
+            <span class="interest-number">03</span>
+            <div>
+              <strong>Stem cell biology and regenerative mechanisms</strong>
+              <span>Cellular plasticity, differentiation, tissue repair, and disease-associated regeneration.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="section" id="skills">
+  <div class="container">
+
+    <div class="head">
+      <h2>Skills</h2>
+      <p>Proficient in both wet lab and bioinformatics data analysis</p>
+    </div>
+<div class="skill-overview-shell">
+      <div class="skill-overview-body">
+        <div class="skill-visual-panel">
+          <div class="skill-visual-watermark"></div>
+          <div class="skill-visual-title">
+            
+            
+          </div>
+
+          <div class="skill-all-canvas">
+            <svg class="skill-all-svg" id="allSkillSvg" viewBox="0 0 1000 690" preserveAspectRatio="none" aria-hidden="true"></svg>
+<div id="allSkillNodes"></div>
+
+            <div class="skill-mini-stat">
+              <span>Total Skills</span><b>20</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-detail-panel">
+          <div class="skill-detail-card" id="allSkillDetailCard">
+            <div class="skill-detail-mini"><span>Category</span><b id="allSkillCategory">Wet Lab</b></div>
+            <h3 id="allSkillTitle">Bacterial culture</h3>
+            <p id="allSkillText">Hands-on cultivation, purification, and maintenance of bacterial isolates for downstream microbiological analysis.</p>
+            <div class="skill-detail-tags" id="allSkillTags"></div>
+            <div class="skill-detail-tip">Interactive skill map</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="head">
+      <h2>Projects</h2>
+      <p>Click a year node to view the project description, then slide into the project image</p>
+    </div>
+    <div class="project-timeline-layout">
+      <div class="project-year-map">
+        <div class="project-map-title"><strong>Project<br>Timeline</strong><span>Click year nodes</span></div>
+        <svg class="project-connector-svg" viewBox="0 0 700 560" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M110 400 C150 330, 190 265, 255 205" />
+          <path d="M255 205 C350 230, 410 285, 445 335" />
+          <path d="M445 335 C525 275, 565 195, 605 150" />
+        </svg>
+        <button class="project-year-node year-2023" data-project="0" type="button"><span><strong>2023</strong><span>Clinical</span></span></button>
+        <button class="project-year-node year-2024" data-project="1" type="button"><span><strong>2024</strong><span>Wet market</span></span></button>
+        <button class="project-year-node year-2025 active" data-project="2" type="button"><span><strong>2025</strong><span>Co-selection</span></span></button>
+        <button class="project-year-node year-2026" data-project="3" type="button"><span><strong>2026</strong><span>Wastewater</span></span></button>
+        <div class="project-preview-chip chip-1">AMR ecology</div>
+        <div class="project-preview-chip chip-2">Microbial genomics</div>
+      </div>
+
+      <div class="project-popout-panel">
+        <div class="project-popout-card text-phase" id="projectPopoutCard">
+          <div class="project-card-controls">
+            <button type="button" id="projectShowText">Text</button>
+            <button type="button" id="projectShowImage">Image</button>
+          </div>
+          <div class="project-slide-stage">
+            <div class="project-text-slide">
+              <span class="project-popout-year" id="projectYear">2025</span>
+              <span class="project-popout-tag" id="projectTag">Undergraduate research</span>
+              <h3 id="projectTitle">Heavy metal co-selection and antibiotic resistance</h3>
+              <p id="projectText">Investigation of heavy-metal exposure, antibiotic resistance, and transcriptional reprogramming in Enterobacteria isolated from poultry.</p>
+              <div class="project-popout-list" id="projectBullets">
+                <span>Focused on resistance adaptation under combined heavy-metal and antibiotic pressure.</span>
+                <span>Connected environmental stress with microbial survival and AMR persistence.</span>
+              </div>
+              <div class="project-slide-note">Slides to image after selection.</div>
+            </div>
+            <div class="project-image-slide">
+              <img id="projectImage" src="project-2025-coselection.png" alt="Project visual">
+              <div class="project-image-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section" id="publications"><div class="container"><div class="head"><h2>Publications</h2><p>Submitted manuscripts and published research articles</p></div><div class="grid2">
+
+<article class="card"><span class="tag">Submitted 2026</span><h3>Draft genome sequence and resistome analysis of MDR Klebsiella pneumoniae ST147</h3><p>Genome announcement describing multidrug-resistant Klebsiella pneumoniae ST147 strain FM2_IFST_BCSIR with high mobility potential from Bangladeshi hospital wastewater in Dhaka. Submitted to ASM Microbiology Resource Announcements. Submission ID: MRA00306-26.</p><div class="links"><span>Publisher link pending</span></div></article>
+
+<article class="card"><span class="tag">Submitted 2026</span><h3>Metagenomic profiling and temporal dynamics of ARGs across hospital wastewaters</h3><p>Metagenomic and molecular surveillance study examining antimicrobial resistance gene profiles and temporal dynamics across hospital wastewater sites in Dhaka, Bangladesh. Submitted to ASM Microbiology Spectrum. Submission ID: Spectrum00755-26.</p><div class="links"><span>Publisher link pending</span></div></article>
+
+<article class="card"><span class="tag">Submitted 2025</span><h3>MDR Escherichia coli from wet markets in Bangladesh</h3><p>Study investigating prevalence, antimicrobial resistance, pathogenic profiles, and heavy-metal survival trends of multidrug-resistant Escherichia coli isolated from wet markets in Bangladesh. Submitted to BMC Microbiology. Submission ID: a09a3db9-b55f-4885-82ee-f740c12b3ac8.</p><div class="links"><span>Publisher link pending</span></div></article>
+
+<article class="card"><span class="tag">2026</span><h3>The role of human microbiome in cancer metastasis</h3><p>Review on mechanisms and therapeutic implications of human microbiome involvement in cancer metastasis, including immune modulation and tumor progression.</p><div class="links"><a href="https://www.sciencedirect.com/science/article/pii/S2667137926000147" target="_blank">Publisher</a><a href="https://doi.org/10.1016/j.arres.2026.100162" target="_blank">DOI</a></div></article>
+
+<article class="card"><span class="tag">2025</span><h3>Co-exposure to heavy metals and antibiotics enhances resistance adaptation</h3><p>Study on how heavy-metal and antibiotic co-exposure enhances resistance and transcriptional adaptation in enteric pathogens from poultry.</p><div class="links"><a href="https://www.sciencedirect.com/science/article/pii/S3050641725000394" target="_blank">Publisher</a><a href="https://doi.org/10.1016/j.temicr.2025.100039" target="_blank">DOI</a></div></article>
+
+<article class="card"><span class="tag">2025</span><h3>MDR bacteria isolated from circulating currency</h3><p>Study detecting, characterizing, and profiling antibiotic resistance among multidrug-resistant bacteria isolated from circulating currency in Northeastern Bangladesh.</p><div class="links"><a href="https://regions.ijidonline.org/article/S2772-7076(24)00188-7/fulltext" target="_blank">Journal</a><a href="https://doi.org/10.1016/j.ijregi.2024.100519" target="_blank">DOI</a></div></article>
+
+<article class="card"><span class="tag">2024</span><h3>Retention of methicillin susceptibility in Staphylococcus aureus</h3><p>Computational biology study exploring a natural adjuvant as an allosteric modifier of penicillin-binding protein 2a to restore methicillin susceptibility in Staphylococcus aureus.</p><div class="links"><a href="https://www.sciencedirect.com/science/article/pii/S0010482524011557" target="_blank">Publisher</a><a href="https://doi.org/10.1016/j.compbiomed.2024.109070" target="_blank">DOI</a></div></article>
+
+<article class="card"><span class="tag">2024</span><h3>Mechanistic approach to immunity and immunotherapy of Alzheimer’s disease</h3><p>Review article discussing immunity and immunotherapy in Alzheimer’s disease through a mechanistic biomedical perspective.</p><div class="links"><a href="https://pubs.acs.org/doi/10.1021/acschemneuro.4c00360" target="_blank">Publisher</a><a href="https://doi.org/10.1021/acschemneuro.4c00360" target="_blank">DOI</a></div></article>
+
+<article class="card"><span class="tag">2022</span><h3>Multi-epitope vaccine against Crimean-Congo Hemorrhagic Fever Virus</h3><p>Reverse vaccinology study developing a multi-epitope-based subunit vaccine candidate against Crimean-Congo Hemorrhagic Fever Virus.</p><div class="links"><a href="https://link.springer.com/article/10.1007/s10989-022-10430-0" target="_blank">Publisher</a><a href="https://doi.org/10.1007/s10989-022-10430-0" target="_blank">DOI</a></div></article>
+
+</div></div></section>
+<section class="section" id="achievements"><div class="container"><div class="head"><h2>Achievements</h2><p>Awards, teaching, and leadership</p></div><div class="grid3"><article class="card"><h3>NST Fellowship</h3><p>Competitive fellowship awarded for MS thesis research proposal by the Ministry of Science and Technology, Bangladesh.</p></article><article class="card"><h3>Best Poster Awards</h3><p>Recognized at International Biotechnology Conference, BRAC University and BSBMB-SABC-OMC International Conference.</p></article><article class="card"><h3>Teaching & Leadership</h3><p>Teaching Assistant for Microbiology lab and Education and Cultural Secretary of the BMB Society, SUST.</p></article></div></div></section>
+<section class="section" id="contact"><div class="container card contact"><div><h2>Let’s connect</h2><p>I am open to academic networking, collaboration, and research conversations around microbiology, immunology, AMR, host-pathogen interaction, and stem cell biology.</p></div><div class="icons"><a href="mailto:mdrubiathislam@gmail.com">✉</a><a href="https://scholar.google.com/citations?user=RvZpNaMAAAAJ&hl=en" target="_blank">🎓</a><a href="https://www.linkedin.com/in/md-rubiath-islam-907a201b4/" target="_blank">in</a><a href="https://sites.google.com/view/rubiathislam" target="_blank">⌂</a><a href="https://www.facebook.com/rubaiath.islam/" target="_blank">f</a><a href="https://www.instagram.com/rubiathscontrivance/" target="_blank">◎</a><a href="https://x.com/MRubiath" target="_blank">𝕏</a></div></div></section>
+</main><footer>© 2026 Md. Rubiath Islam. Academic Portfolio.</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+(function(){
+  const allSkills = [
+    { id:"wet-root", category:"Wet Lab", label:"Wet Lab", icon:"⚗", x:18, y:30, root:true },
+    { id:"bacterial", category:"Wet Lab", label:"Bacterial culture", icon:"🧫", x:7, y:16, desc:"Hands-on cultivation, purification, and maintenance of bacterial isolates for downstream microbiological analysis.", tags:["Microbiology","Isolation","Culture handling"] },
+    { id:"growth", category:"Wet Lab", label:"Growth-curve", icon:"↗", x:18, y:12, desc:"Monitoring bacterial growth dynamics to evaluate adaptation, viability, and response under experimental conditions.", tags:["Kinetics","Optical density","Growth profiling"] },
+    { id:"pcr", category:"Wet Lab", label:"PCR", icon:"⌬", x:31, y:16, desc:"Amplification of target genes for molecular confirmation, screening, and resistance-associated investigations.", tags:["Gene detection","Amplification","Primer-based assay"] },
+    { id:"qpcr", category:"Wet Lab", label:"qPCR", icon:"▧", x:7, y:37, desc:"Quantitative analysis of gene abundance and relative changes across samples using fluorescence-based amplification.", tags:["Quantification","ARG tracking","Comparative analysis"] },
+    { id:"seq", category:"Wet Lab", label:"Sequencing", icon:"∿", x:18, y:50, desc:"Preparation and interpretation of sequencing-based workflows to investigate microbial genes and genomes.", tags:["WGS","Amplicon sequencing","Data generation"] },
+    { id:"sdspage", category:"Wet Lab", label:"SDS-PAGE", icon:"▦", x:31, y:37, desc:"Separation of proteins by electrophoresis for molecular characterization and experimental validation.", tags:["Protein work","Gel electrophoresis","Visualization"] },
+
+    { id:"bio-root", category:"Bioinformatics", label:"Bioinformatics", icon:"🧬", x:66, y:30, root:true },
+    { id:"fm", category:"Bioinformatics", label:"Functional metagenomics", icon:"✣", x:54, y:16, desc:"Analysis of microbial community function, resistome composition, and environmental genetic signatures using metagenomic workflows.", tags:["Metagenomics","Resistome","Community function"] },
+    { id:"wgs", category:"Bioinformatics", label:"WGS", icon:"🧬", x:66, y:12, desc:"Whole-genome sequencing workflows for strain-level characterization, genome annotation, and resistance profiling.", tags:["Genome assembly","Annotation","Comparative genomics"] },
+    { id:"rnaseq", category:"Bioinformatics", label:"RNA-seq", icon:"≋", x:78, y:16, desc:"Transcriptome analysis to examine expression changes, pathway activity, and condition-specific molecular responses.", tags:["Expression analysis","Transcriptomics","Differential expression"] },
+    { id:"scrna", category:"Bioinformatics", label:"Single-cell RNA seq", icon:"✹", x:54, y:37, desc:"Single-cell transcriptomic frameworks to resolve cellular heterogeneity and dynamic biological responses.", tags:["Single-cell","Cellular resolution","Heterogeneity"] },
+    { id:"dock", category:"Bioinformatics", label:"Molecular docking", icon:"⌯", x:66, y:50, desc:"Predictive modeling of molecular interactions to identify potential binding modes and therapeutic targets.", tags:["Ligand binding","Drug discovery","In silico screening"] },
+    { id:"sim", category:"Bioinformatics", label:"Molecular simulation", icon:"◇", x:78, y:37, desc:"Simulation-based analysis to understand molecular behavior, structural stability, and interaction dynamics.", tags:["Dynamics","Structural modeling","Mechanistic insight"] },
+
+    { id:"soft-root", category:"Software", label:"Software", icon:"▣", x:24, y:82, root:true },
+    { id:"word", category:"Software", label:"Word", icon:"W", x:12, y:72, desc:"Scientific writing, manuscript preparation, and document formatting for academic and professional outputs.", tags:["Writing","Formatting","Manuscripts"] },
+    { id:"ppt", category:"Software", label:"PowerPoint", icon:"P", x:24, y:66, desc:"Presentation design for research seminars, posters, academic talks, and science communication.", tags:["Slides","Presentation design","Visual communication"] },
+    { id:"excel", category:"Software", label:"Excel", icon:"X", x:36, y:72, desc:"Spreadsheet-based data organization, cleaning, quick analysis, and result tracking for research workflows.", tags:["Data organization","Spreadsheets","Quick analysis"] },
+    { id:"illustrator", category:"Software", label:"Illustrator", icon:"Ai", x:13, y:94, desc:"Scientific figure design and publication-ready visual composition for infographics and illustrations.", tags:["Figures","Vector design","Infographics"] },
+    { id:"photoshop", category:"Software", label:"Photoshop", icon:"Ps", x:35, y:94, desc:"Image editing and creative visual enhancement for academic graphics and digital presentation assets.", tags:["Image editing","Visual enhancement","Graphics"] },
+
+    { id:"prog-root", category:"Programming", label:"Programming", icon:"</>", x:78, y:82, root:true },
+    { id:"python", category:"Programming", label:"Python", icon:"Py", x:68, y:72, desc:"Python for data handling, analysis automation, biological scripting, and scientific workflow development.", tags:["Automation","Scientific scripting","Data processing"] },
+    { id:"r", category:"Programming", label:"R", icon:"R", x:78, y:66, desc:"R for biostatistics, data visualization, transcriptomics, and publication-quality analysis pipelines.", tags:["Biostatistics","Visualization","Bioconductor"] },
+    { id:"bash", category:"Programming", label:"Bash", icon:">_", x:88, y:72, desc:"Bash for command-line data processing, workflow orchestration, and reproducible bioinformatics operations.", tags:["Shell scripting","Pipeline control","Linux environment"] }
+  ];
+
+  const edges = [
+    ["wet-root","bacterial"],["wet-root","growth"],["wet-root","pcr"],["wet-root","qpcr"],["wet-root","seq"],["wet-root","sdspage"],
+    ["bio-root","fm"],["bio-root","wgs"],["bio-root","rnaseq"],["bio-root","scrna"],["bio-root","dock"],["bio-root","sim"],
+    ["prog-root","python"],["prog-root","r"],["prog-root","bash"],
+    ["soft-root","word"],["soft-root","ppt"],["soft-root","excel"],["soft-root","illustrator"],["soft-root","photoshop"]
+  ];
+
+  const nodeMap = {};
+  allSkills.forEach(s => nodeMap[s.id] = s);
+
+  const svg = document.getElementById('allSkillSvg');
+  const nodesContainer = document.getElementById('allSkillNodes');
+
+  const detailCard = document.getElementById('allSkillDetailCard');
+  const categoryEl = document.getElementById('allSkillCategory');
+  const titleEl = document.getElementById('allSkillTitle');
+  const textEl = document.getElementById('allSkillText');
+  const tagsEl = document.getElementById('allSkillTags');
+
+  function drawEdges() {
+    svg.innerHTML = "";
+    edges.forEach(([fromId, toId]) => {
+      const from = nodeMap[fromId];
+      const to = nodeMap[toId];
+      if (!from || !to) return;
+      const x1 = from.x * 10;
+      const y1 = from.y * 6.8;
+      const x2 = to.x * 10;
+      const y2 = to.y * 6.8;
+      const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      p.setAttribute('d', `M ${x1} ${y1} L ${x2} ${y2}`);
+      if (from.root && to.root) p.setAttribute('class', 'core-line');
+      svg.appendChild(p);
+    });
+  }
+
+  function renderNodes(activeId) {
+    nodesContainer.innerHTML = "";
+    allSkills.forEach(skill => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'skill-node' + (skill.root ? ' root' : '') + (skill.id === activeId ? ' active' : '');
+      btn.style.left = `calc(${skill.x}% - ${skill.root ? 39 : 31}px)`;
+      btn.style.top = `calc(${skill.y}% - ${skill.root ? 39 : 31}px)`;
+      btn.dataset.id = skill.id;
+      btn.innerHTML = `<span class="skill-node-icon">${skill.icon}</span><span class="skill-node-label">${skill.label}</span>`;
+      btn.addEventListener('click', () => setActiveSkill(skill.id));
+      nodesContainer.appendChild(btn);
+    });
+  }
+
+  function setActiveSkill(id) {
+    const skill = nodeMap[id];
+    if (!skill) return;
+
+    renderNodes(id);
+
+    categoryEl.textContent = skill.category;
+    titleEl.textContent = skill.label;
+    textEl.textContent = skill.desc || `${skill.label} belongs to the ${skill.category} section in the integrated skill tree.`;
+    tagsEl.innerHTML = (skill.tags || [skill.category, "Core skill", "Interactive node"]).map(tag => `<span>✦ ${tag}</span>`).join("");
+
+    detailCard.classList.remove('opening');
+    void detailCard.offsetWidth;
+    detailCard.classList.add('opening');
+  }
+
+  drawEdges();
+  setActiveSkill('bacterial');
+})();
+</script>
+
+
+<script>
+(function(){
+  const projects=[
+    {year:"2023",tag:"Clinical microbiology",title:"ESBL-producing E. coli and K. pneumoniae",text:"Characterization of beta-lactamase-producing isolates from hospital settings to assess nosocomial infection risk and resistance dissemination.",image:"project-2023-nosocomial.png",imageSub:"Nosocomial infection risk and ESBL-producing pathogens",bullets:["Focused on clinically important beta-lactamase-producing bacteria.","Connected hospital-associated isolates with antimicrobial resistance risk."]},
+    {year:"2024",tag:"Environmental microbiology",title:"MDR E. coli from poultry and wet markets",text:"Profiling multidrug-resistant and heavy-metal tolerant E. coli using culture-based microbiology, antimicrobial susceptibility testing, and molecular techniques.",image:"project-2024-poultry.png",imageSub:"Poultry cloaca microbiota, selective pressure, and dissemination risk",bullets:["Investigated MDR E. coli from poultry and wet-market environments.","Combined phenotypic resistance screening with molecular confirmation."]},
+    {year:"2025",tag:"Undergraduate research",title:"Heavy metal co-selection and antibiotic resistance",text:"Investigation of heavy-metal exposure, antibiotic resistance, and transcriptional reprogramming in Enterobacteria isolated from poultry.",image:"project-2025-coselection.png",imageSub:"Co-selection mechanisms linking heavy metals and antibiotic resistance",bullets:["Focused on resistance adaptation under combined heavy-metal and antibiotic pressure.","Connected environmental stress with microbial survival and AMR persistence."]},
+    {year:"2026",tag:"Graduate research",title:"Hospital wastewater metagenomics and ARG persistence",text:"Study of species abundance, clinically important ARGs, temporal persistence, integrons, transposons, and dissemination potential in hospital wastewater.",image:"project-2026-wastewater.png",imageSub:"Hospital wastewater, ARG mobility, and environmental spread",bullets:["Used wastewater-based surveillance to study AMR dissemination potential.","Focused on ARG persistence, mobile genetic elements, and resistome dynamics."]}
+  ];
+  const nodes=document.querySelectorAll(".project-year-node");
+  const card=document.getElementById("projectPopoutCard"),year=document.getElementById("projectYear"),tag=document.getElementById("projectTag"),title=document.getElementById("projectTitle"),text=document.getElementById("projectText"),bullets=document.getElementById("projectBullets"),image=document.getElementById("projectImage"),showText=document.getElementById("projectShowText"),showImage=document.getElementById("projectShowImage");
+  let slideTimer=null;
+  function textPhase(){card.classList.remove("image-phase");card.classList.add("text-phase")}
+  function imagePhase(){card.classList.remove("text-phase");card.classList.add("image-phase")}
+  function openProject(i){
+    const item=projects[i];
+    nodes.forEach(node=>node.classList.toggle("active",Number(node.dataset.project)===i));
+    year.textContent=item.year; tag.textContent=item.tag; title.textContent=item.title; text.textContent=item.text;
+    bullets.innerHTML=item.bullets.map(b=>`<span>${b}</span>`).join("");
+    image.src=item.image; image.alt=item.title;
+    textPhase(); clearTimeout(slideTimer); slideTimer=setTimeout(imagePhase,1600);
+  }
+  nodes.forEach(node=>node.addEventListener("click",()=>openProject(Number(node.dataset.project))));
+  showText.addEventListener("click",()=>{clearTimeout(slideTimer);textPhase()});
+  showImage.addEventListener("click",()=>{clearTimeout(slideTimer);imagePhase()});
+})();
+</script>
+
+
+<div class="project-image-modal" id="projectImageModal" aria-hidden="true">
+  <div class="project-image-modal-inner">
+    <button class="project-image-close" id="projectImageClose" type="button" aria-label="Close image">×</button>
+    <img id="projectImageModalImg" src="" alt="Expanded project visual">
+    <div class="project-image-modal-caption" id="projectImageModalCaption"></div>
+  </div>
+</div>
+
+
+<script>
+(function(){
+  const projectImage = document.getElementById("projectImage");
+  const modal = document.getElementById("projectImageModal");
+  const modalImg = document.getElementById("projectImageModalImg");
+  const modalCaption = document.getElementById("projectImageModalCaption");
+  const closeBtn = document.getElementById("projectImageClose");
+
+  if(!projectImage || !modal || !modalImg || !closeBtn) return;
+
+  function openModal(){
+    modalImg.src = projectImage.src;
+    modalImg.alt = projectImage.alt || "Expanded project visual";
+    modalCaption.textContent = projectImage.alt || "Project visual";
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal(){
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  projectImage.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+
+  modal.addEventListener("click", function(event){
+    if(event.target === modal) closeModal();
+  });
+
+  document.addEventListener("keydown", function(event){
+    if(event.key === "Escape" && modal.classList.contains("open")) {
+      closeModal();
+    }
+  });
+})();
+</script>
+
+</body></html>
