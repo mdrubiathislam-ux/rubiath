@@ -2053,6 +2053,171 @@ section,
   background-color: #000 !important;
 }
 
+
+/* Mobile optimization package */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 980px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 92% !important;
+    max-width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .nav {
+    left: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+  }
+
+  .navlinks {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    justify-content: center !important;
+  }
+
+  .navlinks a {
+    font-size: 10.5px !important;
+    padding: 7px 8px !important;
+  }
+
+  .hero,
+  .about-grid,
+  .projects-wheel-layout,
+  .project-timeline-layout,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero {
+    text-align: center !important;
+    padding-top: 110px !important;
+  }
+
+  .hero p,
+  .about-card p,
+  .project-popout-card p,
+  .publication-card p,
+  .achievement-card p {
+    text-align: justify !important;
+  }
+
+  .visual img,
+  .about-image img {
+    max-width: 280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .focus-image-grid,
+  .research-grid,
+  .publication-grid,
+  .achievement-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-year-map {
+    min-height: 470px !important;
+  }
+
+  .project-year-node {
+    width: 86px !important;
+    height: 86px !important;
+  }
+
+  .project-year-node strong {
+    font-size: 21px !important;
+  }
+
+  .project-popout-panel {
+    min-height: auto !important;
+    padding: 18px !important;
+  }
+
+  .project-popout-card,
+  .project-slide-stage {
+    min-height: 580px !important;
+  }
+
+  .project-text-slide {
+    padding: 64px 22px 26px 22px !important;
+    overflow-y: auto !important;
+  }
+
+  .project-image-modal-inner {
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 12px !important;
+  }
+
+  .project-image-modal img {
+    max-width: calc(100vw - 24px) !important;
+    max-height: calc(100vh - 24px) !important;
+    object-fit: contain !important;
+  }
+
+  .skill-overview-shell {
+    overflow-x: auto !important;
+  }
+
+  .skill-overview-body {
+    min-width: 900px !important;
+  }
+
+  .skill-all-canvas {
+    min-width: 900px !important;
+  }
+
+  button,
+  .navlinks a,
+  .project-year-node,
+  .skill-node,
+  .btn {
+    touch-action: manipulation;
+  }
+}
+
+@media (max-width: 620px) {
+  .head h2 {
+    font-size: 30px !important;
+  }
+
+  .hero h1 {
+    font-size: 36px !important;
+  }
+
+  .hero .subtitle,
+  .hero p {
+    font-size: 14px !important;
+  }
+
+  .btnrow {
+    justify-content: center !important;
+  }
+
+  .project-map-title strong {
+    font-size: 30px !important;
+  }
+
+  .year-2023 { left: 7% !important; top: 66% !important; }
+  .year-2024 { left: 21% !important; top: 35% !important; }
+  .year-2025 { left: 52% !important; top: 54% !important; }
+  .year-2026 { left: 67% !important; top: 23% !important; }
+
+  .project-preview-chip {
+    display: none !important;
+  }
+}
+
 </style>
 </head>
 <body>
